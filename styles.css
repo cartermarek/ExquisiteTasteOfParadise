@@ -23,27 +23,36 @@ i:hover {
 /*----- CLASS ELEMENTS -----*/
 
 .card-img {
-max-height: 2000px;
-  width: 100%;
+  max-height: 1500px;
+  width: auto;
   opacity: 0.4;
 }
 
 .drink1, .drink2 {
-  height: auto;
+  max-height: auto;
   width: 100%;
   /*padding: 20px 15px;*/
-  border: solid 1px white;
+  border: solid 3px white;
 }
 
 .main-1, .footer1 {
   padding: 15px;
 }
 
-.main-topic {
+.main-topic, .footer {
   margin: auto;
   padding: 10px;
 }
 
 .social-media {
   text-align: center;
+}
+
+@media (min-width: 767px) {
+  .drink1, .drink2 {
+    height: auto;
+    max-width: 100;
+    /*padding: 20px 15px;*/
+    border: solid 1px white;
+  }
 }
