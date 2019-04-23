@@ -1,0 +1,49 @@
+/*----- TAG ELEMENTS -----*/
+
+body {
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Exo 2', sans-serif;
+  /*font-family: 'Hammersmith One', sans-serif;*/
+}
+
+h4 {
+  line-height: 3rem;
+}
+
+i {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+i:hover {
+  color: red;
+}
+
+
+/*----- CLASS ELEMENTS -----*/
+
+.card-img {
+max-height: 2000px;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.drink1, .drink2 {
+  height: auto;
+  width: 100%;
+  /*padding: 20px 15px;*/
+  border: solid 1px white;
+}
+
+.main-1, .footer1 {
+  padding: 15px;
+}
+
+.main-topic {
+  margin: auto;
+  padding: 10px;
+}
+
+.social-media {
+  text-align: center;
+}
