@@ -4,10 +4,19 @@ body {
   /*font-family: 'Oswald', sans-serif;*/
   font-family: 'Exo 2', sans-serif;
   /*font-family: 'Hammersmith One', sans-serif;*/
+  font-size: 100%;
+}
+
+form {
+  color: white;
+}
+h1, h2, h3 {
+  text-align: center;
+  margin: auto;
 }
 
 h4 {
-  line-height: 3rem;
+  line-height: 2.75rem;
 }
 
 i {
@@ -15,37 +24,97 @@ i {
   padding-right: 5px;
 }
 
-i:hover {
+
+
+a:hover {
   color: red;
 }
 
 
 /*----- CLASS ELEMENTS -----*/
 
-
-.card-img-overlay {
-  width: 100%;
-  top: 15%;
-  position: absolute;
+.bartend-class {
+  text-align: center;
 }
 
-.drink1, .drink2 {
+.bartend-header {
+  font-size: 2rem;
+}
+
+.bartend-horizontal {
+  border: 1px solid black;
+}
+
+.bartend-list2 {
+  text-align: center;
+  color: black;
+  list-style-type: none;
+}
+
+.bartend-price {
+  padding: 15px 10px;;
+  border-top: 1px solid black;
+}
+
+.bartend-price2 {
+  color: red;
+  padding-bottom: 10px;
+  font-size: 3rem;
+}
+
+.bartend-price3 {
+  font-size: 12px;
+}
+
+.card-class, .questionsAnswers {
+  margin: auto;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 5%;
+  box-shadow: 5px 10px 18px #888888;
+  text-align: justify;
+  padding-top: 8px;
+  padding-right: 25px;
+  padding-bottom: 8px;
+}
+
+.card-class p {
+  color: black;
+}
+
+.card-img-overlay {
+  padding: 0;
+  margin: auto;
+}
+
+.card-title {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.drink1 {
   max-height: 100%;
   width: auto;
   /*padding: 20px 15px;*/
-  border-radius: 25%;
+  border-radius: 20%;
 }
 
-
-.etop-sign {
-  text-align: center;
-  bottom: 100px;
+.drink2 {
+  max-height: 100%;
+  width: auto;
+  /*padding: 20px 15px;*/
+  border-radius: 20%;
 }
+
 
 .img-header {
-  max-height: 1200px;
+  /*max-height: 1200px;*/
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
+  border-radius: 15%;
 }
 
 .img-navi {
@@ -76,7 +145,27 @@ i:hover {
   background-color: transparent;
 }
 
+.main-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-left {
+  margin-bottom: 5px;
+}
+
+.main-right {
+  margin-top: 5px;
+}
+
 .social-media {
   text-align: center;
-  bottom-padding: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    background-color: black;
+    width: 100%;
+  }
 }
