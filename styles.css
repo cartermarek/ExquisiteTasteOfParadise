@@ -1,5 +1,4 @@
 /*----- TAG ELEMENTS -----*/
-
 body {
   /*font-family: 'Oswald', sans-serif;*/
   font-family: 'Exo 2', sans-serif;
@@ -10,6 +9,7 @@ body {
 form {
   color: white;
 }
+
 h1, h2, h3 {
   text-align: center;
   margin: auto;
@@ -24,15 +24,15 @@ i {
   padding-right: 5px;
 }
 
-
-
 a:hover {
-  color: red;
+  animation-name: navi-highlight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 25%;
+  opacity: 0.4;
 }
 
-
 /*----- CLASS ELEMENTS -----*/
-
 .bartend-class {
   text-align: center;
 }
@@ -52,7 +52,8 @@ a:hover {
 }
 
 .bartend-price {
-  padding: 15px 10px;;
+  padding: 15px 10px;
+  ;
   border-top: 1px solid black;
 }
 
@@ -79,6 +80,23 @@ a:hover {
   padding-top: 8px;
   padding-right: 25px;
   padding-bottom: 8px;
+}
+
+.flyer {
+  margin: auto;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 5%;
+  box-shadow: 5px 10px 18px #888888;
+  text-align: justify;
+  padding: 8px;
+}
+
+.upcoming-event {
+  margin-bottom: 5px;
 }
 
 .card-class p {
@@ -109,7 +127,6 @@ a:hover {
   border-radius: 20%;
 }
 
-
 .img-header {
   /*max-height: 1200px;*/
   width: 100%;
@@ -118,17 +135,16 @@ a:hover {
 }
 
 .img-navi {
- max-height: 60px;
- max-width: 90px;
+  max-height: 60px;
+  max-width: 90px;
 }
 
 .main {
-    background-color: black;
+  background-color: black;
 }
 
 .main-1, .footer1 {
   padding: 15px;
-
 }
 
 .main-topic, .footer {
@@ -139,7 +155,6 @@ a:hover {
 .footer {
   text-align: right;
 }
-
 
 .navbar-toggler {
   background-color: transparent;
@@ -163,9 +178,22 @@ a:hover {
   padding-bottom: 30px;
 }
 
+/********* ID TAGS *********/
+#upcoming-event-pic {
+  /*max-height: 1200px;*/
+  width: 100%;
+  border-radius: 5%;
+}
+
 @media screen and (max-width: 1150px) {
   .card {
     background-color: black;
     width: 100%;
+  }
+}
+
+@keyframes navi-highlight {
+  100% {
+    background-color: red;
   }
 }
